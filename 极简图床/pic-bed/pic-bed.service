@@ -1,0 +1,23 @@
+[Unit]
+Description=极轻量图床服务
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/Pic
+ExecStart=/opt/Pic/pic-bed
+Restart=always
+RestartSec=5
+Environment=GODEBUG=madvdontneed=1
+
+# 内存限制（可选）
+MemoryMax=64M
+
+# 日志配置
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pic-bed
+
+[Install]
+WantedBy=multi-user.target
