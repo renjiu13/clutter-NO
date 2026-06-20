@@ -1,0 +1,16 @@
+{
+  "port": 8080,
+  "storage_dir": "./data",
+  "max_size": 10,
+  "api_key": "",
+  "timeout": 30,
+  "enable_log": true,
+  "enable_delete": true,
+  "enable_file_list": true,
+  "enable_auto_clean": false,
+  "enable_compress": false,
+  "keep_original_name": false,
+  "allowed_types": ["jpg", "jpeg", "png", "gif", "webp"],
+  "auto_clean_days": 30,
+  "log_file": "./pic-bed.log"
+}
